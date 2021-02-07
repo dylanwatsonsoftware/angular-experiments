@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "wmr",
+    "build": "wmr build",
+    "serve": "wmr serve"
+  },
+  "devDependencies": {
+    "wmr": "^1.0.0"
+  },
+  "dependencies": {
+    "rxjs": "6.2.1"
+  }
+}
