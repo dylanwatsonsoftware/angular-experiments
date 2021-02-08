@@ -1,9 +1,14 @@
 {
   "npmScope": "nx-angular",
-  "affected": { "defaultBase": "master" },
+  "affected": {
+    "defaultBase": "master"
+  },
   "implicitDependencies": {
     "angular.json": "*",
-    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
     "tsconfig.base.json": "*",
     "tslint.json": "*",
     ".eslintrc.json": "*",
@@ -11,12 +16,29 @@
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "accessToken": "MzhhMWJlMDAtNzhmNy00NWZhLWEzNGEtMTVmYmE2YjhiNTdmfHJlYWQtd3JpdGU=",
+        "cacheableOperations": [
+          "build",
+          "test",
+          "lint",
+          "e2e"
+        ],
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
+      }
     }
   },
   "projects": {
-    "angular-app": { "tags": [] },
-    "angular-app-e2e": { "tags": [], "implicitDependencies": ["angular-app"] }
+    "angular-app": {
+      "tags": []
+    },
+    "angular-app-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "angular-app"
+      ]
+    }
   }
 }
