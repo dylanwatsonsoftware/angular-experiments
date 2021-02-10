@@ -1,4 +1,7 @@
 {
+  "github": {
+    "enabled": true
+  },
   "functions": {
     "dist/apps/nest-backend/main.js": {
       "memory": 3008,
